@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.sass']
 })
 export class MenuComponent {
-  name: string = "Vini";
-  age: number = 25;
+  sizeSvg: string = "50px"
 }

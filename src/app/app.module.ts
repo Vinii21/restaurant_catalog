@@ -7,6 +7,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ForkComponent } from './components/fork/fork.component';
 import { PromotionComponent } from './components/promotion/promotion.component';
 import { RandomComponent } from './components/random/random.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { RandomComponent } from './components/random/random.component';
     MenuComponent,
     ForkComponent,
     PromotionComponent,
-    RandomComponent
+    RandomComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
