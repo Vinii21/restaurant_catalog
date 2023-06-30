@@ -1,7 +1,8 @@
 <nav class="container-nav-menu">
+  <app-categories [showModal]="showModal"></app-categories>
   <ul>
     <li class="random"><app-random></app-random></li>
-    <li class="fork"><app-fork></app-fork></li>
+    <li (click)="toggleModal()" class="fork"><app-fork [svgColors]="svgColors"></app-fork></li>
     <li><app-promotion></app-promotion></li>
   </ul>
 </nav>

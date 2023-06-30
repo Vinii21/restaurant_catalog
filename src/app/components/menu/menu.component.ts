@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.sass']
 })
 export class MenuComponent {
-  sizeSvg: string = "50px"
+  showModal = true;
+  svgColors = "#ffffff"
+
+  toggleColorSvg(value: boolean) {
+    if(value) {
+      this.svgColors = "#ffffff"
+    } else {
+      this.svgColors = "#f99899"
+    }
+  }
+
+  toggleModal() {
+    this.showModal = !this.showModal;
+    this.toggleColorSvg(this.showModal)
+  }
 }
