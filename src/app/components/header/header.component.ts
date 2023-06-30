@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   svg = "../../assets/svg/colocho2.svg"
+  btn = false
+
+  activeInfoButton() {
+    this.btn = !this.btn
+  }
 }
