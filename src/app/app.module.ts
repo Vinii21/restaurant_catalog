@@ -13,6 +13,7 @@ import { CardComponent } from './components/card/card.component';
 import { SvgmenuComponent } from './components/svgmenu/svgmenu.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { ModalPromotionsComponent } from './components/modal-promotions/modal-promotions.component';
+import { CreditsComponent } from './components/credits/credits.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ModalPromotionsComponent } from './components/modal-promotions/modal-pr
     CardComponent,
     SvgmenuComponent,
     CategoriesComponent,
-    ModalPromotionsComponent
+    ModalPromotionsComponent,
+    CreditsComponent
   ],
   imports: [
     BrowserModule,

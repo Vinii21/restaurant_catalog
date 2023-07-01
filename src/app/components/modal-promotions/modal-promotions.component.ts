@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, Input, Output, EventEmitter } from '@angular/core';
 import Swiper from 'swiper';
 
 @Component({
@@ -8,6 +8,8 @@ import Swiper from 'swiper';
 })
 export class ModalPromotionsComponent implements AfterViewInit{
    swiper: Swiper | undefined;
+   @Input() showPromotion: boolean = false;
+   @Output() closePromotion = new EventEmitter<boolean>();
 
    ngAfterViewInit() {
     this.swiper = new Swiper(".swiper-container",{
@@ -24,5 +26,10 @@ export class ModalPromotionsComponent implements AfterViewInit{
         el: '.swiper-pagination',
       },
     })
+   };
+
+   toggleClosePromotionModal () {
+    this.showPromotion = !this.showPromotion
+    this.closePromotion.emit(this.showPromotion)
    }
 }

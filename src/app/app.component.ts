@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'catalogo_restaurants_app';
+  showPromotion = false
+
+  showPromotionModal(showPromotionModal: boolean) {
+    this.showPromotion = showPromotionModal
+  }
 }
