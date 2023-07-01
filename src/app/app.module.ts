@@ -13,7 +13,9 @@ import { CardComponent } from './components/card/card.component';
 import { SvgmenuComponent } from './components/svgmenu/svgmenu.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { ModalPromotionsComponent } from './components/modal-promotions/modal-promotions.component';
-import { CreditsComponent } from './components/credits/credits.component';
+import { CreditsComponent } from './views/credits/credits.component';
+import { HomeComponent } from './views/home/home.component';
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { CreditsComponent } from './components/credits/credits.component';
     SvgmenuComponent,
     CategoriesComponent,
     ModalPromotionsComponent,
-    CreditsComponent
+    CreditsComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
