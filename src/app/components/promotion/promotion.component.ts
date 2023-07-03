@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-promotion',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./promotion.component.sass']
 })
 export class PromotionComponent {
-
+  @Input() svgColors: string = "#ffffff"
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./credits.component.sass']
 })
 export class CreditsComponent {
-
+  svgColors: string = "#000000"
 }

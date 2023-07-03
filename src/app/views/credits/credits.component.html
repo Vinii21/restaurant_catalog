@@ -1,31 +1,36 @@
 <div class="container-credits">
-  <img src="../../../assets/svg/colocho3.svg" alt="svg decorativo">
+  <nav class="container-credits__nav">
+    <img class="colocho" src="../../../assets/svg/colocho3.svg" alt="svg decorativo">
+    <img routerLink="/" class="home" src="../../../assets/images/home.png" alt="svg home" width="30px">
+  </nav>
   <div class="container-credits_description">
-    <h3>Descripción</h3>
+    <h3 class="title">Descripción</h3>
     <p>
       Está página es un catálogo de los restaurantes, sodas y heladerías de <span>Sarchi</span>, tierra de la artesanía en el corazón de Costa Rica. Podrás enconcontrar una gran variedad de comidas así como información de cada local. Desde su ubicación, menú, contacto para llamar y ordenar hasta tu casa. También puedes registrarte como usuario para que des calificación a los lugares que visites o consideres oportuno calificar; sin embargo esto es opcional.
     </p>
     <p>
-      Puedes buscar mediante categorías con el icono de <span>...</span>, también puedes buscar de manera random (aleatoria) con el icono de <span>...</span> y por último con el icono de <span>...</span> puedes acceder a las promociones que esten disponibles el día de hoy en particular de distintos lugares; así que buen provecho.
+      Puedes buscar mediante categorías con el icono de <span><app-fork [svgColors]="svgColors"></app-fork></span>, también puedes buscar de manera random (aleatoria) con el icono de <span><app-random [svgColors]="svgColors"></app-random></span> y por último con el icono de <span><app-promotion [svgColors]="svgColors"></app-promotion></span> puedes acceder a las promociones que esten disponibles el día de hoy en particular, en distintos lugares; así que buen provecho.
     </p>
+    <img class="rueda" src="../../../assets/images/rueda.png" alt="Rueda carreta sarchi">
   </div>
-  <div>
-    <h3>Creador</h3>
+  <div class="container-credits--author">
+    <h3 class="title">Creador</h3>
     <p>
-      Está web fue creada por <a href="#">Vinicio Chavarría</a>, Desarrollador Web Full Stack. Si quieres algo similar a esto para ti o tú negocio o tienes una idea diferente en mente para un sitio web puedes contactarme y conversamos.
+      Está web fue creada por <a href="https://vinii21.github.io/portafolioVinii/" target="_blank">Vinicio Chavarría</a>, Desarrollador Web Full Stack. Si quieres algo similar a esto para ti o tú negocio o tienes una idea diferente en mente para un sitio web puedes contactarme y conversamos.
     </p>
     <ul>
-      <li>Instagram</li>
-      <li>LinKedin</li>
-      <li>Correo electronico</li>
+      <li><a href="#" target="_blank"><img src="../../../assets/images/002-instagram.png" alt="Instagram de Vinicio"></a></li>
+      <li><a href="#" target="_blank"><img src="../../../assets/images/linkedin.png" alt="Linkedin Vinicio"></a></li>
+      <li><a href="#"><img src="../../../assets/images/gmail.png" alt="Enviar correo a Vinicio"></a></li>
     </ul>
   </div>
-  <div>
-    <h3>Feedback</h3>
-    <p>Si quieres dar tú opinión de la app o crees que le hace falta algo es aquí...</p>
-    <form>
+  <div class="container-credits--feedback">
+    <h3 class="title">Feedback</h3>
+    <p>Si quieres dar tú opinión de la app o crees que le hace falta algo, hazmelo saber...</p>
+    <form class="feedback--form">
       <input type="email" name="email" placeholder="Escribe tú Email">
       <textarea name="text" placeholder="Escribe tú Feedback o idea..."></textarea>
+      <input class="btn" type="button" value="Enviar">
     </form>
   </div>
 </div>
