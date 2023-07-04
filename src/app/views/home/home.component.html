@@ -4,16 +4,20 @@
   *ngIf="showPromotion"
   (closePromotion)="showPromotionModal($event)">
 </app-modal-promotions>
-<main>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
+<app-modal-menu [showMenu]="showMenu" *ngIf="showMenu" (closeMenu)="showMenuModal($event)"></app-modal-menu>
+<main [style.display]="showMenu ? 'none' : 'flex' ">
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
+  <app-card (showMenuModal)="showMenuModal($event)"></app-card>
 </main>
 <app-menu (showPromotionModal)="showPromotionModal($event)"></app-menu>

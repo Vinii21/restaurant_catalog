@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   showPromotion = false
+  showMenu = false
 
   showPromotionModal(showPromotionModal: boolean) {
     this.showPromotion = showPromotionModal
+  }
+
+  showMenuModal(showMenuModal: boolean) {
+    this.showMenu = showMenuModal
   }
 }

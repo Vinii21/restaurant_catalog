@@ -16,6 +16,7 @@ import { ModalPromotionsComponent } from './components/modal-promotions/modal-pr
 import { CreditsComponent } from './views/credits/credits.component';
 import { HomeComponent } from './views/home/home.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
+import { ModalMenuComponent } from './components/modal-menu/modal-menu.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { NotFoundComponent } from './views/not-found/not-found.component';
     ModalPromotionsComponent,
     CreditsComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ModalMenuComponent,
   ],
   imports: [
     BrowserModule,
