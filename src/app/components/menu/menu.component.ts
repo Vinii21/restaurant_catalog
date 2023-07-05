@@ -7,10 +7,10 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class MenuComponent {
   //variable que se envia al componente hijo categories
-  showModal = true;
-  svgColors = "#ffffff"
+  showModal: boolean = true;
+  svgColors: string = "#ffffff"
   //variable que se emite para mostrar el modal de promociones
-  PromotionModal = true
+  PromotionModal: boolean = true
   //Output para mostrar el modal de promociones
   @Output() showPromotionModal = new EventEmitter<boolean>();
 

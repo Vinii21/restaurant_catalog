@@ -1,6 +1,6 @@
 <header>
   <h2>Sarchi</h2>
-  <img [src]="svg" alt="svg colochos"/>
-  <img routerLink="/credits" (click)="activeInfoButton()" class="info" src="../../../assets/images/informacion.png" alt="Inforamción">
-  <img class="user" src="../../../assets/images/user.png" alt="Panel usuario">
+  <app-colochouno-svg class="svg"></app-colochouno-svg>
+  <app-info-svg routerLink="/credits" class="info"></app-info-svg>
+  <app-user-svg class="user" routerLink="/user/panel"></app-user-svg>
 </header>

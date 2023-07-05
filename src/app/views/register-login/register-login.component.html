@@ -1,0 +1,27 @@
+<div>
+  <app-nav-pages></app-nav-pages>
+  <div class="container-forms">
+    <form class="form-wrapper" name="register" [@moveFormRegister]="activeForm">
+      <h3>Registro</h3>
+      <input type="text" placeholder="username">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Contraseña">
+      <input type="submit" value="Registrarse"/>
+      <span>¿Ya tienes una cuenta? <button (click)="moveForm(1)">Ingresar</button></span>
+    </form>
+    <form class="form-wrapper" name="login" [@moveFormLogin]="activeForm">
+      <h3>Ingresar</h3>
+      <fieldset>
+        <legend>Email</legend>
+        <input type="email">
+      </fieldset>
+      <fieldset>
+        <legend>Contraseña</legend>
+        <input type="password">
+      </fieldset>
+      <input type="submit" value="Entrar"/>
+      <span>¿No tienes una cuenta? <button (click)="moveForm(2)">Registro</button></span>
+    </form>
+  </div>
+</div>
+

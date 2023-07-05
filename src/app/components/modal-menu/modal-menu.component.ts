@@ -6,7 +6,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./modal-menu.component.sass']
 })
 export class ModalMenuComponent {
-  overflow: string = "none"
   @Input() showMenu: boolean = false;
   @Output() closeMenu = new EventEmitter<boolean>()
 

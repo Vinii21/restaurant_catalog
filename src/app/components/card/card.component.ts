@@ -6,7 +6,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./card.component.sass']
 })
 export class CardComponent {
-  showModal = true
+  showModal: boolean = true
   @Output() showMenuModal = new EventEmitter<boolean>();
 
   toggleShowModalMenu() {
