@@ -1,26 +1,29 @@
 <div>
   <app-nav-pages></app-nav-pages>
   <div class="container-forms">
-    <form class="form-wrapper" name="register" [@moveFormRegister]="activeForm">
+    <form class="form-wrapper first" name="register" [@moveFormRegister]="activeForm">
       <h3>Registro</h3>
-      <input type="text" placeholder="username">
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Contraseña">
-      <input type="submit" value="Registrarse"/>
-      <span>¿Ya tienes una cuenta? <button (click)="moveForm(1)">Ingresar</button></span>
+      <input class="input-register" type="text" placeholder="username">
+      <input class="input-register" type="email" placeholder="Email">
+      <div class="input-register-password">
+        <input class="input-register" [type]="typeInput" placeholder="Contraseña">
+        <i (click)="showPassword()" class='bx bx-show-alt'></i>
+      </div>
+      <input class="btn-login" type="submit" value="Registrarse"/>
+      <span>¿Ya tienes una cuenta? <button class="btn" (click)="moveForm(1)">Ingresar</button></span>
     </form>
     <form class="form-wrapper" name="login" [@moveFormLogin]="activeForm">
       <h3>Ingresar</h3>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Email</legend>
         <input type="email">
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Contraseña</legend>
         <input type="password">
       </fieldset>
-      <input type="submit" value="Entrar"/>
-      <span>¿No tienes una cuenta? <button (click)="moveForm(2)">Registro</button></span>
+      <input class="btn-login" type="submit" value="Entrar"/>
+      <span>¿No tienes una cuenta? <button class="btn" (click)="moveForm(2)">Registro</button></span>
     </form>
   </div>
 </div>

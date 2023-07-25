@@ -28,6 +28,11 @@ import { NavPagesComponent } from './components/nav-pages/nav-pages.component';
 import { HomeSvgComponent } from './components/home-svg/home-svg.component';
 import { UserSvgComponent } from './components/user-svg/user-svg.component';
 import { InfoSvgComponent } from './components/info-svg/info-svg.component';
+import { InstaSvgComponent } from './components/insta-svg/insta-svg.component';
+import { EmailSvgComponent } from './components/email-svg/email-svg.component';
+import { LinkedinSvgComponent } from './components/linkedin-svg/linkedin-svg.component';
+import { RuedaSvgComponent } from './components/rueda-svg/rueda-svg.component';
+import { WhatsappSvgComponent } from './components/whatsapp-svg/whatsapp-svg.component';
 
 
 @NgModule({
@@ -56,6 +61,11 @@ import { InfoSvgComponent } from './components/info-svg/info-svg.component';
     HomeSvgComponent,
     UserSvgComponent,
     InfoSvgComponent,
+    InstaSvgComponent,
+    EmailSvgComponent,
+    LinkedinSvgComponent,
+    RuedaSvgComponent,
+    WhatsappSvgComponent,
   ],
   imports: [
     BrowserModule,

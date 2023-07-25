@@ -8,7 +8,7 @@
     <p>
       Puedes buscar mediante categorías con el icono de <span><app-fork [svgColors]="svgColors"></app-fork></span>, también puedes buscar de manera random (aleatoria) con el icono de <span><app-random [svgColors]="svgColors"></app-random></span> y por último con el icono de <span><app-promotion [svgColors]="svgColors"></app-promotion></span> puedes acceder a las promociones que esten disponibles el día de hoy en particular, en distintos lugares; así que buen provecho.
     </p>
-    <img class="rueda" src="../../../assets/images/rueda.png" alt="Rueda carreta sarchi">
+    <app-rueda-svg class="rueda"></app-rueda-svg>
   </div>
   <div class="container-credits--author">
     <h3 class="title">Creador</h3>
@@ -16,9 +16,9 @@
       Está web fue creada por <a href="https://vinii21.github.io/portafolioVinii/" target="_blank">Vinicio Chavarría</a>, Desarrollador Web Full Stack. Si quieres algo similar a esto para ti o tú negocio o tienes una idea diferente en mente para un sitio web puedes contactarme y conversamos.
     </p>
     <ul>
-      <li><a href="#" target="_blank"><img src="../../../assets/images/002-instagram.png" alt="Instagram de Vinicio"></a></li>
-      <li><a href="#" target="_blank"><img src="../../../assets/images/linkedin.png" alt="Linkedin Vinicio"></a></li>
-      <li><a href="#"><img src="../../../assets/images/gmail.png" alt="Enviar correo a Vinicio"></a></li>
+      <li><a href="#" target="_blank"><app-insta-svg></app-insta-svg></a></li>
+      <li><a href="#" target="_blank"><app-linkedin-svg></app-linkedin-svg></a></li>
+      <li><a href="#"><app-email-svg></app-email-svg></a></li>
     </ul>
   </div>
   <div class="container-credits--feedback">

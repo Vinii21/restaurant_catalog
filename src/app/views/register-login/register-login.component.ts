@@ -16,12 +16,12 @@ import { trigger, state, style, transition, animate } from "@angular/animations"
         zIndex: "100"
       })),
       transition("1 => 2", [
-        animate('.1s', style({ transform: 'translateX(100%)' })),
+        animate('.1s', style({ transform: 'translateX(110%)' })),
         animate(".1s", style({zIndex: "100"})),
         animate('.1s', style({ transform: 'translateX(0)' })),
       ]),
       transition("2 => 1", [
-        animate('.1s', style({ transform: 'translateX(-100%)' })),
+        animate('.1s', style({ transform: 'translateX(-110%)' })),
         animate(".1s", style({zIndex: "100"})),
         animate('.1s', style({ transform: 'translateX(0)' })),
         animate(".1s", style({transform: "rotate(7deg)"})),
@@ -49,9 +49,16 @@ import { trigger, state, style, transition, animate } from "@angular/animations"
 })
 export class RegisterLoginComponent {
   activeForm = 1;
+  typeInput: string = "password"
 
   moveForm(formNumber: number) {
     this.activeForm = formNumber
-    console.log(formNumber)
-  }
+  };
+
+  showPassword() {
+    this.typeInput = "text"
+    setTimeout(()=>{
+      this.typeInput = "password";
+    },3000)
+  };
 }
